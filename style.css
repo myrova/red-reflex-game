@@ -1,0 +1,125 @@
+body{
+  margin:0;
+  font-family:Arial;
+  background:#111;
+  color:white;
+  text-align:center;
+  overflow:hidden;
+}
+
+.hidden{ display:none; }
+
+#menu{ margin-top:120px; }
+
+input{
+  padding:10px;
+  font-size:18px;
+  margin-bottom:20px;
+}
+
+button{
+  padding:12px 25px;
+  font-size:18px;
+  margin:10px;
+  cursor:pointer;
+}
+
+#gameArea{
+  position:relative;
+  width:100vw;
+  height:100vh;
+  background:white;
+  overflow:hidden;
+}
+
+.circle{
+  position:absolute;
+  background:red;
+  border-radius:50%;
+  cursor:pointer;
+  animation: pop 0.15s ease;
+}
+
+@keyframes pop{
+  0%{ transform: scale(0); }
+  100%{ transform: scale(1); }
+}
+
+#timer{
+  position:absolute;
+  top:20px;
+  left:20px;
+  font-size:22px;
+  color:black;
+}
+
+#leaderboardPage{
+  padding-top:80px;
+}
+
+#leaderboardList{
+  max-width:400px;
+  margin:auto;
+  text-align:left;
+}
+
+#homeBtn{
+  position:fixed;
+  top:15px;
+  right:20px;
+  background:#222;
+  color:white;
+  border:none;
+  padding:10px 15px;
+  font-size:16px;
+  border-radius:8px;
+  cursor:pointer;
+  z-index:999;
+}
+
+#replayBtn{
+  position:absolute;
+  bottom:40px;
+  left:50%;
+  transform:translateX(-50%);
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  background:#111;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:32px;
+  cursor:pointer;
+}
+
+#result{
+  position:absolute;
+  top:35%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  font-size:32px;
+  color:black;
+}
+
+#shareScore{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,0);
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+#shareText{
+  font-size:18px;
+  color:black;
+}
+
+#copyLinkBtn{
+  padding:5px 12px;
+  font-size:16px;
+  cursor:pointer;
+}

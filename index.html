@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red Reflex Game</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+</head>
+<body>
+
+<button id="homeBtn">🏠 Home</button>
+
+<!-- MENU -->
+<div id="menu">
+  <h1>Red Reflex Game</h1>
+  <input id="username" placeholder="Enter your username">
+  <div class="menuButtons">
+    <button id="playBtn">Play</button>
+    <button id="leaderboardBtn">Leaderboard</button>
+  </div>
+</div>
+
+<!-- LEADERBOARD -->
+<div id="leaderboardPage" class="hidden">
+  <h1>Top 300 Players</h1>
+  <ol id="leaderboardList"></ol>
+</div>
+
+<!-- GAME -->
+<div id="gameArea" class="hidden">
+  <div id="timer">0.00</div>
+  <div id="result" class="hidden"></div>
+  <div id="shareScore" class="hidden">
+    <span id="shareText"></span>
+    <button id="copyLinkBtn">Copy Link</button>
+  </div>
+  <div id="replayBtn">↻</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
