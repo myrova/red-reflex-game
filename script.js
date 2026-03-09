@@ -9,7 +9,6 @@ const firebaseConfig = {
     measurementId: "G-7MTH4XGYBS"
   };
 
-// Initialiser Firebase
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore(); // Pour utiliser Firestore
 
@@ -42,8 +41,7 @@ replayBtn.onclick = startGame;
 // ---------------- Copy Link Button ----------------
 const githubPagesLink = "https://myrova.github.io/red-reflex-game"; 
 
-const copyLinkBtn = document.getElementById("copyLinkBtn");
-const shareText = document.getElementById("shareText");
+
 
 copyLinkBtn.onclick = () => {
   navigator.clipboard.writeText(githubPagesLink).then(() => {
