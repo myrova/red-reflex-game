@@ -3,47 +3,41 @@ background:#111;
 color:white;
 font-family:Arial;
 margin:0;
+text-align:center;
 }
 
 .title{
-text-align:center;
 margin-top:80px;
 }
 
-.menu-layout{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:120px;
-margin-top:120px;
-}
-
-.game-description{
-width:260px;
+.description-center{
+max-width:500px;
+margin:60px auto;
 color:#ccc;
-font-size:16px;
-text-align:left;
+font-size:18px;
+line-height:1.6;
 }
 
 .menu-center{
 display:flex;
 flex-direction:column;
 align-items:center;
+gap:20px;
 }
 
 #username{
-padding:10px;
+padding:12px;
 font-size:16px;
-margin-bottom:20px;
+width:220px;
 }
 
 .buttons{
 display:flex;
-gap:10px;
+gap:15px;
 }
 
 button{
-padding:10px 20px;
+padding:10px 22px;
 font-size:16px;
 cursor:pointer;
 border:none;
@@ -68,7 +62,6 @@ display:none;
 
 #timer{
 font-size:40px;
-text-align:center;
 margin-top:20px;
 }
 
@@ -88,16 +81,16 @@ width:70px;
 height:70px;
 }
 
-/* FOOTER EN BAS */
+/* footer */
 
 footer{
 position:fixed;
 bottom:0;
 left:0;
 width:100%;
-text-align:center;
 background:#111;
 padding:12px 0;
+font-size:14px;
 }
 
 footer a{
