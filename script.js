@@ -1,12 +1,13 @@
 // ----------- Firebase config -----------
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "XXXX",
-  appId: "XXXX"
-};
+    apiKey: "AIzaSyADZBIQByT-li6pVuFJZdl0q_O6LSHFLvE",
+    authDomain: "red-reflex-game.firebaseapp.com",
+    projectId: "red-reflex-game",
+    storageBucket: "red-reflex-game.firebasestorage.app",
+    messagingSenderId: "957213082750",
+    appId: "1:957213082750:web:c24ac5bc318936feaf842f",
+    measurementId: "G-7MTH4XGYBS"
+  };
 
 // Initialiser Firebase
 firebase.initializeApp(firebaseConfig);
