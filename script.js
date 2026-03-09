@@ -1,3 +1,4 @@
+// ----------- Firebase config -----------
 const firebaseConfig = {
   apiKey: "YOUR_API_KEY",
   authDomain: "YOUR_PROJECT.firebaseapp.com",
@@ -7,9 +8,11 @@ const firebaseConfig = {
   appId: "XXXX"
 };
 
+// Initialiser Firebase
 firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore();
+const db = firebase.firestore(); // Pour utiliser Firestore
 
+// ----------- Code du jeu -----------
 const menu = document.getElementById("menu");
 const leaderboardPage = document.getElementById("leaderboardPage");
 const leaderboardList = document.getElementById("leaderboardList");
@@ -101,7 +104,6 @@ function finishGame(){
   resultText.innerText = "Your time: "+time+"s";
   resultText.classList.remove("hidden");
   replayBtn.style.display="flex";
-  // phrase de partage
   const username = usernameInput.value.trim();
   shareText.innerText = `I scored ${time}s on Red Reflex Game! Come try to beat me!`;
   shareScoreDiv.classList.remove("hidden");
