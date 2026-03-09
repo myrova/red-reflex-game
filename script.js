@@ -39,12 +39,26 @@ playBtn.onclick = startGame;
 leaderboardBtn.onclick = showLeaderboard;
 replayBtn.onclick = startGame;
 
-// Copier le lien du jeu
+// ---------------- Copy Link Button ----------------
+const githubPagesLink = "https://myrova.github.io/red-reflex-game"; 
+
+const copyLinkBtn = document.getElementById("copyLinkBtn");
+const shareText = document.getElementById("shareText");
+
 copyLinkBtn.onclick = () => {
-  navigator.clipboard.writeText(window.location.origin).then(() => {
+  navigator.clipboard.writeText(githubPagesLink).then(() => {
     alert("Game link copied! Share it with friends!");
+  }).catch((err) => {
+    console.error("Failed to copy: ", err);
+    alert("Could not copy link. Try manually.");
   });
 };
+
+// Mettre à jour le texte de partage après la fin du jeu
+function updateShareText(time) {
+  const username = document.getElementById("username").value.trim() || "Player";
+  shareText.innerText = `I scored ${time}s on Red Reflex Game! Come try to beat me!`;
+}
 
 function goHome(){
   clearInterval(timerInterval);
